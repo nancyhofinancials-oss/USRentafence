@@ -1,0 +1,25 @@
+﻿<section class="page-intro"><div class="container"><p class="eyebrow">LET’S BUILD A PLAN</p><h1>Contact & Request a Quote</h1><p>Tell us about your site, schedule and fencing needs.</p></div></section>
+<section class="section"><div class="container intake-layout">
+<aside class="intake-sidebar"><p class="eyebrow blue">PERSONAL SERVICE STARTS HERE</p><h2>Let’s talk about your project.</h2><p>Not sure which fence is right for your site? Share what you know and our team can help you work through the options.</p><a class="quote-phone" href="tel:+15168051947">516-805-1947 <span aria-hidden="true">↗</span></a><p>Call for rentals, sales, installation and service availability.</p><div class="preview-notice"><strong>Online intake preview</strong><p>This form can check your project details, but online delivery is not connected yet. Nothing is sent or saved. Please call to request your quote.</p></div></aside>
+<div class="intake-card"><h2>Tell us what you need</h2><p class="form-help" id="form-help">Fields marked <span aria-hidden="true">*</span> are required.</p>
+<form id="quote-form" method="post" aria-describedby="form-help form-status">
+<div id="form-errors" class="form-summary" role="alert" tabindex="-1" hidden></div>
+<fieldset><legend>Your contact information</legend><div class="form-grid">
+<div class="form-field"><label for="contact-name">Full name <span aria-hidden="true">*</span></label><input id="contact-name" name="name" autocomplete="name" required maxlength="120" aria-describedby="contact-name-error"><span class="field-error" id="contact-name-error"></span></div>
+<div class="form-field"><label for="company">Company</label><input id="company" name="company" autocomplete="organization" maxlength="160"></div>
+<div class="form-field"><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="email-error"><span class="field-error" id="email-error"></span></div>
+<div class="form-field"><label for="phone">Phone <span aria-hidden="true">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" required maxlength="40" aria-describedby="phone-error"><span class="field-error" id="phone-error"></span></div>
+</div></fieldset>
+<fieldset><legend>Project details</legend><div class="form-grid">
+<div class="form-field"><label for="zip">Project ZIP code <span aria-hidden="true">*</span></label><input id="zip" name="zip" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}(-[0-9]{4})?" required maxlength="10" placeholder="e.g. 11735" aria-describedby="zip-error"><span class="field-error" id="zip-error"></span></div>
+<div class="form-field"><label for="fence-type">Type of fencing <span aria-hidden="true">*</span></label><select id="fence-type" name="fenceType" required aria-describedby="fence-type-error"><option value="">Select an option</option><option>Temporary chain-link panels</option><option>Post-driven fencing</option><option>Privacy / windscreen inquiry</option><option>Jersey barriers / accessories</option><option>Not sure — help me choose</option></select><span class="field-error" id="fence-type-error"></span></div>
+<div class="form-field"><label for="footage">Estimated linear footage</label><input id="footage" name="footage" type="number" min="1" step="1" max="1000000" placeholder="Leave blank if unsure" aria-describedby="footage-error"><span class="field-error" id="footage-error"></span></div>
+<div class="form-field"><label for="project-type">Rental or purchase <span aria-hidden="true">*</span></label><select id="project-type" name="projectType" required aria-describedby="project-type-error"><option value="">Select an option</option><option>Rental</option><option>Purchase</option><option>Help me compare</option></select><span class="field-error" id="project-type-error"></span></div>
+<div class="form-field form-wide"><label for="installation-date">Requested installation date</label><input id="installation-date" name="installationDate" type="date" aria-describedby="date-help installation-date-error"><small id="date-help">Requested dates are subject to availability.</small><span class="field-error" id="installation-date-error"></span></div>
+<div class="form-field form-wide"><label for="details">Additional details</label><textarea id="details" name="details" rows="5" maxlength="5000" placeholder="Tell us about the site, access, rental duration or any special requirements."></textarea></div>
+</div></fieldset>
+<p class="form-status" id="form-status" role="status" aria-live="polite">Preview only. Your information will not be sent or saved.</p>
+<button class="button red" id="quote-submit" type="submit" disabled>Check Project Details <span aria-hidden="true">→</span></button>
+<noscript><p>Please enable JavaScript to check your details, or call <a href="tel:+15168051947">516-805-1947</a> for a quote.</p></noscript>
+</form></div></div></section>
+<script src="assets/js/quote-form.js" defer></script>
